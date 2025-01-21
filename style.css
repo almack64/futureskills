@@ -67,13 +67,20 @@ header nav ul li a:hover {
     position: relative;
 }*/
 .hero {
-    background: url(banner.webp) no-repeat center center/cover;
+    background: url(banner.jpg) no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 120px 20px;
     position: relative;
     background-attachment: fixed;
 }
+
+@supports (background-image: url("banner.webp")) {
+    .hero {
+        background: url(banner.webp) no-repeat center center/cover;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
