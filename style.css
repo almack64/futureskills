@@ -59,12 +59,20 @@ header nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
+/*.hero {
     background: linear-gradient(to right, #004aad, #002f5c), url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 120px 20px;
     position: relative;
+}*/
+.hero {
+    background: url(banner.webp) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    background-attachment: fixed;
 }
 
 .hero::before {
