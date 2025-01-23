@@ -369,3 +369,7 @@ footer ul li a:hover {
 .refferal_badge {
     display: none !important;
 }
+.mc-field-group.input-group strong {
+    color: #333; /* Replace #333 with your desired color */
+    font-weight: bold;
+}
