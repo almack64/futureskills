@@ -301,16 +301,21 @@ footer ul li a:hover {
 }
 
 /* --- Updated Mailchimp Styles --- */
-/* Mailchimp Form Styles */
+/* Mailchimp Form Styling */
 #mc_embed_signup {
     background: #fff;
     margin: 0 auto;
     padding: 20px;
-    width: 100%;
     max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     font: 14px Helvetica, Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mc_embed_signup h2 {
+    text-align: center;
+    color: #004aad;
+    margin-bottom: 20px;
 }
 
 .mc-field-group {
@@ -318,22 +323,19 @@ footer ul li a:hover {
 }
 
 .mc-field-group label {
-    font-weight: bold;
     display: block;
-    margin-bottom: 5px;
+    font-weight: bold;
     color: #333;
+    margin-bottom: 5px;
 }
 
 .mc-field-group input[type="text"],
-.mc-field-group input[type="email"],
-.mc-field-group input[type="radio"] {
+.mc-field-group input[type="email"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 .mc-field-group.input-group ul {
@@ -346,17 +348,10 @@ footer ul li a:hover {
 }
 
 .mc-field-group.input-group input[type="radio"] {
-    width: auto;
     margin-right: 10px;
 }
 
-.mc-field-group.input-group input[type="radio"]:checked + label {
-    font-weight: bold;
-    color: #007BFF;
-}
-
 #mc-embedded-subscribe {
-    display: inline-block;
     background-color: #2ecc71;
     color: #fff;
     padding: 10px 20px;
@@ -370,13 +365,7 @@ footer ul li a:hover {
     background-color: #28b463;
 }
 
-@media (max-width: 600px) {
-    #mc_embed_signup {
-        padding: 15px;
-        box-shadow: none;
-    }
-
-    .mc-field-group {
-        font-size: 14px;
-    }
+/* Hide Mailchimp branding */
+.refferal_badge {
+    display: none !important;
 }
