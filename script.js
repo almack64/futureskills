@@ -128,4 +128,25 @@ $(document).ready(function() {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the relevant elements
+  const reasonRadios = document.querySelectorAll("input[name='MMERGE7']");
+  const formatFieldGroup = document.querySelector(".mc-field-group.input-group:nth-of-type(2)"); // Adjust if necessary
 
+  // Initially hide the "Preferred Cohort Course Format" field
+  if (formatFieldGroup) {
+    formatFieldGroup.style.display = "none";
+  }
+
+  // Add event listeners to reason radios
+  reasonRadios.forEach((radio) => {
+    radio.addEventListener("change", function () {
+      // Check if "AI & Your Career Course" is selected
+      if (this.value === "AI & Your Career Course" && formatFieldGroup) {
+        formatFieldGroup.style.display = "block"; // Show the field
+      } else if (formatFieldGroup) {
+        formatFieldGroup.style.display = "none"; // Hide the field
+      }
+    });
+  });
+});
