@@ -131,9 +131,9 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function () {
   // Get the relevant elements
   const reasonRadios = document.querySelectorAll("input[name='MMERGE7']");
-  const formatFieldGroup = document.querySelector(".mc-field-group.input-group:nth-of-type(2)"); // Adjust if necessary
+  const formatFieldGroup = document.querySelectorAll(".mc-field-group.input-group")[1]; // Select the second input-group for Preferred Course Format
 
-  // Initially hide the "Preferred Cohort Course Format" field
+  // Initially hide the "Preferred Course Format" field
   if (formatFieldGroup) {
     formatFieldGroup.style.display = "none";
   }
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
   reasonRadios.forEach((radio) => {
     radio.addEventListener("change", function () {
       // Check if "AI & Your Career Course" is selected
-      if (this.value === "AI & Your Career Course" && formatFieldGroup) {
+      if (this.value.includes("AI & Your Career")) {
         formatFieldGroup.style.display = "block"; // Show the field
       } else if (formatFieldGroup) {
         formatFieldGroup.style.display = "none"; // Hide the field
