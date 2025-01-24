@@ -15,6 +15,10 @@
         ftypes[4] = 'text';
         fnames[5] = 'MMERGE7';
         ftypes[5] = 'radio';
+        fnames[6] = 'MMERGE8';
+        ftypes[6] = 'radio';
+        fnames[7] = 'COMMENTS';
+        ftypes[7] = 'text';
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
 </script>
