@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Adjust based on the header height */
     line-height: 1.6;
     background: linear-gradient(to bottom, #004aad, #002f5c);
     color: #333;
