@@ -190,6 +190,20 @@ em {
     font-weight: bold; /* Adds emphasis */
 }
 
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .service-item img {
+        max-width: 60%;
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
+
 /* About Section */
 .about {
     padding: 60px 20px;
