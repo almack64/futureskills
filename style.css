@@ -397,3 +397,84 @@ footer ul li a:hover {
     color: #333; /* Replace #333 with your desired color */
     font-weight: bold;
 }
+/* General About Section Styles */
+.about {
+    background: linear-gradient(to bottom, #e8f4f8, #cce7f3);
+    padding: 60px 20px;
+    border-top: 5px solid #2ecc71;
+}
+
+.centered-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004aad;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Bio Card */
+.bio-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio-card h2, .bio-card h3 {
+    color: #004aad;
+    margin-bottom: 15px;
+}
+
+.bio-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Program Section */
+.program-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.program-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card h4 {
+    color: #004aad;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.program-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
