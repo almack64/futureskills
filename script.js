@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', scrollAnimations);
     updateCounter();
 };*/
 
-document.addEventListener('DOMContentLoaded', dynamicCounter);
+//document.addEventListener('DOMContentLoaded', dynamicCounter);
 
 // Back to Top Button
 const backToTopButton = () => {
