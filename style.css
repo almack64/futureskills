@@ -22,10 +22,13 @@ header {
     color: #fff;
     padding: 5px 0; /* Reduced padding for thinner header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: sticky;
+    position: fixed; /* Changed from sticky to fixed */
     top: 0;
+    width: 100%; /* Ensure it spans the full width */
     z-index: 1000;
+    transition: transform 0.3s ease-in-out; /* Smooth hiding/revealing animation */
 }
+
 
 header .logo {
     width: 120px; /* Reduced logo size to match thinner header */
