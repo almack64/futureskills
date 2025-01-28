@@ -1,5 +1,4 @@
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type="text/javascript">
+
     (function($) {
         window.fnames = new Array();
         window.ftypes = new Array();
@@ -21,4 +20,3 @@
         ftypes[7] = 'text';
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
-</script>
