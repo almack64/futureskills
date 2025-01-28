@@ -503,3 +503,27 @@ footer ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+.details {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Light background to distinguish section */
+    border: 1px solid #ddd;    /* Optional border for separation */
+    border-radius: 8px;        /* Rounded corners for a softer look */
+    font-family: 'Arial', sans-serif; /* Ensures readability */
+    line-height: 1.6;          /* Improves text spacing */
+}
+.details h2 {
+    font-size: 1.8rem;
+    color: #2ecc71;            /* Matches brand color */
+    margin-bottom: 10px;
+}
+.details ul {
+    padding-left: 20px;
+    list-style-type: disc;     /* Adds bullets for clarity */
+}
+.details li {
+    margin: 5px 0;
+}
+.details p {
+    margin-bottom: 15px;
+}
