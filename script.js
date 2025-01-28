@@ -154,22 +154,24 @@ document.addEventListener("DOMContentLoaded", function () {
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
+if (!header) {
+    console.error("Header element not found!");
+}
+
 window.addEventListener('scroll', () => {
-    // Check screen width to limit functionality
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 768) { // Only applies to larger screens
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
-            // Scroll down: hide the header
+            console.log("Scrolling down - hiding header");
             header.style.transform = 'translateY(-100%)';
         } else {
-            // Scroll up: show the header
+            console.log("Scrolling up - showing header");
             header.style.transform = 'translateY(0)';
         }
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
     } else {
-        // Reset the header for small screens
         header.style.transform = 'translateY(0)';
     }
 });
