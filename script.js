@@ -1,3 +1,6 @@
+// Enable jQuery noConflict mode
+var $j = jQuery.noConflict();
+
 // JavaScript Enhancements for Future Skills Website
 
 // Typing Effect for Hero Section Header
@@ -107,9 +110,9 @@ const backToTopButton = () => {
 document.addEventListener('DOMContentLoaded', backToTopButton);
 
 //Smooth Scrolling Effect
-$(document).ready(function() {
+$j(document).ready(function() {
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $j("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -119,8 +122,8 @@ $(document).ready(function() {
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
+      $j('html, body').animate({
+        scrollTop: $j(hash).offset().top
       }, 800, function() {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -128,6 +131,7 @@ $(document).ready(function() {
     }
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get the relevant elements
   const reasonRadios = document.querySelectorAll("input[name='MMERGE7']");
