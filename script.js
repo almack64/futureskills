@@ -1,3 +1,11 @@
+// Ensure jQuery is loaded
+if (typeof jQuery !== 'undefined') {
+    var $ = jQuery.noConflict();
+} else {
+    console.error('jQuery is not loaded');
+}
+var noConflict = jQuery?.noConflict();
+
 // Enable jQuery noConflict mode
 var $j = jQuery.noConflict();
 
