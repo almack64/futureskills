@@ -1,14 +1,3 @@
-/* Ensure jQuery is loaded
-if (typeof jQuery !== 'undefined') {
-    var $ = jQuery.noConflict();
-} else {
-    console.error('jQuery is not loaded');
-}
-var noConflict = jQuery?.noConflict();
-
-// Enable jQuery noConflict mode
-var $j = jQuery.noConflict();*/
-
 // JavaScript Enhancements for Future Skills Website
 
 // Typing Effect for Hero Section Header
@@ -118,9 +107,9 @@ const backToTopButton = () => {
 document.addEventListener('DOMContentLoaded', backToTopButton);
 
 //Smooth Scrolling Effect
-$j(document).ready(function() {
+jQuery(document).ready(function() {
   // Add smooth scrolling to all links
-  $j("a").on('click', function(event) {
+  jQuery("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -130,8 +119,8 @@ $j(document).ready(function() {
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      $j('html, body').animate({
-        scrollTop: $j(hash).offset().top
+      jQuery('html, body').animate({
+        scrollTop: jQuery(hash).offset().top
       }, 800, function() {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
