@@ -1,4 +1,4 @@
-// Ensure jQuery is loaded
+/* Ensure jQuery is loaded
 if (typeof jQuery !== 'undefined') {
     var $ = jQuery.noConflict();
 } else {
@@ -7,7 +7,7 @@ if (typeof jQuery !== 'undefined') {
 var noConflict = jQuery?.noConflict();
 
 // Enable jQuery noConflict mode
-var $j = jQuery.noConflict();
+var $j = jQuery.noConflict();*/
 
 // JavaScript Enhancements for Future Skills Website
 
