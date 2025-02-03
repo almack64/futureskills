@@ -20,7 +20,7 @@ body {
     padding: 0;
     padding-top: var(--header-height);
     line-height: 1.6;
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    background: #f7f7f7;
     color: var(--text-color);
     overflow-x: hidden;
 }
