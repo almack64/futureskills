@@ -108,26 +108,28 @@ document.addEventListener('DOMContentLoaded', backToTopButton);
 
 //Smooth Scrolling Effect
 jQuery(document).ready(function() {
-  // Add smooth scrolling to all links
+  // Apply smooth scrolling only to same-page links
   jQuery("a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
+    // Check if the link has a hash value
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      jQuery('html, body').animate({
-        scrollTop: jQuery(hash).offset().top
-      }, 800, function() {
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
+      // Verify that the link is on the same page
+      if (
+        location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+        location.hostname === this.hostname
+      ) {
+        // Prevent default behavior for same-page links
+        event.preventDefault();
+        var hash = this.hash;
+        jQuery('html, body').animate({
+          scrollTop: jQuery(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
     }
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get the relevant elements
