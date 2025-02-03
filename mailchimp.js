@@ -19,4 +19,4 @@
         fnames[7] = 'COMMENTS';
         ftypes[7] = 'text';
     }(jQuery));
-    var $mcj = jQuery.noConflict(true);
+    var $mcj = jQuery.noConflict();
