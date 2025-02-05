@@ -1,98 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Skills Team Bios</title>
-    <meta name="description" content="Empower yourself with Future Skills Training. Master AI tutoring, consulting, and career readiness in a rapidly evolving tech world.">
-    <meta name="keywords" content="AI tutoring, Future Skills training, Career consulting, AI readiness">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Skills Team Bios</title>
+  <meta name="description" content="Empower yourself with Future Skills Training. Master AI tutoring, consulting, and career readiness in a rapidly evolving tech world.">
+  <meta name="keywords" content="AI tutoring, Future Skills training, Career consulting, AI readiness">
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional inline CSS for fade-in effects -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Enhanced styling for program cards */
+    .program-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .program-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    /* Button styling for new links */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: var(--accent-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #28b463;
+    }
+  </style>
+  <!-- Optional: You can also add these styles into your style.css -->
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <a href="index.html#home">
-            <img src="logo.png" alt="Future Skills Training & Tutoring Logo" class="logo">
-            </a>
-           <nav>
-    <ul>
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#services">Services</a></li> 
-        <li><a href="index.html#about">About Us</a></li>
-        <li><a href="about.html">Bios</a></li>
-        <li><a href="https://www.thetherapyexperience.com/futureskills-booking?brand=FS">Booking</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-</nav>
-
-        </div>
-    </header>
-
-    <main>
-    <section id="bios" class="about">
-        <h1 class="centered-title">Team Bios</h1>
-        <div class="about-content">
-            <h2 class="sub-title">About Allen Patrick</h2>
-            <p>
-                Allen Patrick is the visionary founder of <strong>Future Skills Training & Tutoring</strong>, 
-                a platform dedicated to empowering learners to excel in a world shaped by AI and automation. 
-                Combining extensive experience in education, engineering, and professional development, 
-                Allen delivers innovative solutions that prepare individuals to thrive in an ever-changing technological landscape.
-            </p>
-    
-            <h2>A Mission for Future-Ready Learning</h2>
-            <p>
-                Allen’s mission is simple: to bridge the gap between cutting-edge AI advancements and practical applications. Through Future Skills, he teaches learners how to collaborate with AI tools to enhance productivity, creativity, and problem-solving. His approach focuses on leveraging context, such as personal strengths, organizational goals, and industry-specific needs, to unlock AI’s full potential.
-            </p>
-    
-            <h2>Expertise You Can Trust</h2>
-            <p>
-               As an experienced <strong>AI Agent Engineer</strong>, Allen has developed AI-driven solutions for workflow optimization, content creation, and automation. His technical expertise, backed by a foundation in mechanical engineering and certifications in FDA and ISO standards, ensures a precise and impactful approach to teaching AI applications. He’s helped professionals and organizations streamline processes, save time, and innovate for the future.
-            </p>
-        </div>
-
-        <div class="program-section">
-            <h2>Our Innovative Programs</h2>
-            <div class="programs">
-                <div class="program-card">
-                    <h4>AI-Focused High School Tutoring</h4>
-                    <p>Introducing ethical AI use in math and science to build confidence and skills.</p>
-                </div>
-                <div class="program-card">
-                    <h4>Professional AI Consulting</h4>
-                    <p>Providing hands-on guidance for professionals seeking to remain competitive in their careers.</p>
-                </div>
-                <div class="program-card">
-                    <h4>"AI & Your Career" Program</h4>
-                    <p>A cohort-based curriculum designed to take learners from foundational knowledge to expert application.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about-content">
-        <h2>A Legacy of Leadership</h2>
-            <p>Allen’s passion for teaching and innovation shines in every aspect of Future Skills. He has redefined how learners interact with AI tools like <strong>Google NotebookLM, ChatGPT, DALL-E</strong>, and <strong>Microsoft Designer</strong>, ensuring they gain not only knowledge but also practical experience to lead in their fields.</p>
-
-            <div style="text-align: center;"><p><strong>With Future Skills, Allen ensures you’re not just keeping up with AI advancements</strong></p>
-                <p><strong>-you’re leading the way.</strong></p></div>
-    </div>
-</section>
-
-    </main>
-
-    <footer>
+  <!-- Header Section -->
+  <header>
     <div class="container">
-        <img src="logo.png" alt="Future Skills Logo" class="footer-logo">
-        <p>&copy; 2025 Future Skills Training & Tutoring. All rights reserved.</p>
-        <p style="font-size: 0.9rem; color: #aaa;">Future Skills Training & Tutoring is a business of <a href="https://www.thetherapyexperience.com/?brand=FS" style="color: #2ecc71; text-decoration: none;">The Therapy Experience</a>.</p>
-        <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/allenmpatrick/">LinkedIn</a></li>
-            <li><a href="#" onmouseover="this.innerHTML='Coming Soon'; this.style.color='grey';" onmouseout="this.innerHTML='Instagram'; this.style.color='';">Instagram</a></li>
-            <li><a href="#" onmouseover="this.innerHTML='Coming Soon'; this.style.color='grey';" onmouseout="this.innerHTML='YouTube'; this.style.color='';">YouTube</a></li>
+      <a href="index.html#home">
+        <img src="logo.png" alt="Future Skills Training & Tutoring Logo" class="logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="about.html">Bios</a></li>
+          <li><a href="https://www.thetherapyexperience.com/futureskills-booking?brand=FS">Booking</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
+      </nav>
     </div>
-</footer>
- <script src="script.js"></script>    
+  </header>
+
+  <main>
+    <section id="bios" class="about">
+      <h1 class="centered-title fade-in">Team Bios</h1>
+      
+      <div class="about-content fade-in">
+        <h2 class="sub-title">About Allen Patrick</h2>
+        <p>
+          Allen Patrick is the visionary founder of <strong>Future Skills Training & Tutoring</strong>, a platform dedicated to empowering learners in a world shaped by AI, automation, and rapid technological change. With extensive experience in education, engineering, and professional development, Allen delivers innovative, future-ready solutions designed to help individuals thrive in a dynamic tech landscape.
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/allenmpatrick/" class="btn" target="_blank">Connect with Allen on LinkedIn</a>
+        </p>
+      </div>
+
+      <div class="about-content fade-in">
+        <h2>A Mission for Future-Ready Learning</h2>
+        <p>
+          Allen’s mission is simple: bridge the gap between cutting-edge AI advancements and real-world application. At Future Skills, he shows learners how to collaborate with AI tools to boost productivity, creativity, and problem-solving. By leveraging each individual’s strengths and aligning with industry needs, he unlocks the full potential of technology.
+        </p>
+      </div>
+
+      <div class="about-content fade-in">
+        <h2>Expertise You Can Trust</h2>
+        <p>
+          As an experienced <strong>AI Agent Engineer</strong>, Allen has crafted AI-driven solutions for workflow optimization, content creation, and automation. His background in mechanical engineering—combined with certifications in FDA and ISO standards—ensures a precise, impactful, and ethical approach to AI. He has empowered countless professionals and organizations to streamline processes and drive innovation.
+        </p>
+      </div>
+
+      <div class="program-section fade-in">
+        <h2>Our Innovative Programs</h2>
+        <div class="programs">
+          <div class="program-card">
+            <h4>AI-Focused High School Tutoring</h4>
+            <p>Introducing ethical AI use in math and science to build confidence and skill—empowering students for tomorrow’s challenges.</p>
+          </div>
+          <div class="program-card">
+            <h4>Professional AI Consulting</h4>
+            <p>Hands-on guidance for professionals seeking to integrate AI solutions, optimize workflows, and maintain a competitive edge.</p>
+          </div>
+          <div class="program-card">
+            <h4>"AI &amp; Your Career" Program</h4>
+            <p>
+              A cutting-edge, cohort-based curriculum designed to take you from foundational knowledge to expert application in an AI-driven workplace. Learn more about this transformative program on our <a href="https://futureskills.thetherapyexperience.com/index.html" target="_blank">main page</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <h2>A Legacy of Leadership</h2>
+        <p>
+          Allen’s passion for teaching and innovation shines throughout Future Skills. By reimagining how learners interact with breakthrough AI tools such as <strong>Google NotebookLM, ChatGPT, DALL-E</strong>, and <strong>Microsoft Designer</strong>, he ensures that every student gains not only theoretical knowledge but also the practical experience needed to lead the way.
+        </p>
+        <div style="text-align: center;">
+          <p><strong>With Future Skills, Allen ensures you’re not just keeping up with AI advancements</strong></p>
+          <p><strong>- you’re leading the way.</strong></p>
+        </div>
+      </div>
+      
+      <!-- Link to Tutoring Philosophy Page -->
+      <div class="about-content fade-in" style="text-align: center; margin-top: 30px;">
+        <p>
+          Curious about our teaching approach? Learn more about our in-depth <a href="tutoring-philosophy.html" class="btn">Tutoring Philosophy</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Updated Footer -->
+  <footer>
+    <div class="container">
+      <img src="logo.png" alt="Future Skills Logo" class="footer-logo">
+      <p>&copy; 2025 Future Skills Training & Tutoring. All rights reserved.</p>
+      <p style="font-size: 0.9rem; color: #aaa;">
+        Future Skills Training & Tutoring is a business of 
+        <a href="https://www.thetherapyexperience.com/?brand=FS" style="color: #2ecc71; text-decoration: none;">The Therapy Experience</a>.
+      </p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/company/future-skills-training-tutoring/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/people/Future-Skills-Training-Tutoring/61572177227092/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@BlazingTruthRootedinTheLight" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- JavaScript to add 'visible' class to fade-in elements on scroll -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -50px 0px"
+      };
+      const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        });
+      }, appearOptions);
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
 </body>
 </html>
