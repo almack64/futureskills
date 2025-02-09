@@ -470,3 +470,49 @@ footer ul li a:hover {
     color: var(--text-color);
     font-weight: bold;
 }
+
+/* ==========================================================================
+   Success Lab Promotion Section
+   ========================================================================== */
+.success-lab {
+  background: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 3px solid #2ecc71;
+  margin-bottom: 40px;
+}
+
+.success-lab h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.success-lab p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  margin: 20px 0;
+}
+
+#countdown h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#countdown-timer {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.cta-button {
+  background: #2ecc71;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
