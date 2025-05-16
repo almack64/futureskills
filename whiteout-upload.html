@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whiteout Linkage Upload</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
+    .container {
+      max-width: 600px; margin: auto; padding: 20px;
+      background: white; border-radius: 8px; box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    input[type="file"], button { margin-top: 15px; }
+    .link { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Upload Excel File for Linkage Processing</h2>
+    <form id="uploadForm">
+      <input type="file" id="excelFile" name="file" accept=".xlsx" required />
+      <br />
+      <button type="submit">Upload & Process</button>
+    </form>
+    <div id="response" class="link"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("uploadForm");
+    const responseDiv = document.getElementById("response");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const fileInput = document.getElementById("excelFile");
+      const file = fileInput.files[0];
+
+      if (!file) {
+        alert("Please select a file.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      responseDiv.innerHTML = "Uploading and processing...";
+
+      try {
+        const res = await fetch("https://wideout-agent-pipeline.allenpatrick.repl.co/upload", {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await res.json();
+        if (data.download_url) {
+          responseDiv.innerHTML = `<a href="${data.download_url}" target="_blank">View Uploaded Session</a>`;
+        } else {
+          responseDiv.innerHTML = "Upload completed, but no link was returned.";
+        }
+      } catch (err) {
+        console.error(err);
+        responseDiv.innerHTML = "An error occurred during upload.";
+      }
+    });
+  </script>
+</body>
+</html>
