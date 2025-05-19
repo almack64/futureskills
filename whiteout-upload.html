@@ -4,19 +4,32 @@
   <meta charset="UTF-8">
   <title>Whiteout Linkage Upload</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
-    .container {
-      max-width: 600px; margin: auto; padding: 20px;
-      background: white; border-radius: 8px; box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
     }
-    input[type="file"], button { margin-top: 15px; }
-    .link { margin-top: 20px; font-weight: bold; }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    input[type="file"], button {
+      margin-top: 15px;
+    }
+    .link {
+      margin-top: 20px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Upload Excel File for Linkage Processing</h2>
-    <form id="uploadForm">
+    <form id="uploadForm" method="POST" enctype="multipart/form-data">
       <input type="file" id="excelFile" name="file" accept=".xlsx" required />
       <br />
       <button type="submit">Upload & Process</button>
